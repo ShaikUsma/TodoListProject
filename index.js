@@ -30,24 +30,6 @@ app.listen(PORT,()=>
 //view engine Configuration
 app.set("view engine","ejs")
 
-// what the use of ejs in node js
-// EJS, or Embedded JavaScript, is a templating engine that adds dynamism to your HTML
-//  by integrating JavaScript.It helps you build web pages that display dynamic content and streamline your front-end and back-end communication.
-//get method
-//  app.get('/',(req,res)=>
-// {
-//     res.render('todo.ejs')
-// })
-//Post method
-// app.post('/',(req, res) => {
-//     console.log(req.body);
-//     });
-// app.get('/',(req,res)=>
-// {
-//     res.send("hello world")
-// })
-
-
 //POST METHOD
 app.post("/",async (req, res) => {
     const todoTask = new TodoTask({
